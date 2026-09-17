@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--
+  Name: Mu'aaz Khan
+  Date: 09.16.2026
+  CSC 372-01
+
+  This is the event.html page for assignment-2. It is the event details page for the North University Events website. 
+  It highlights a featured event with a title, image, description, and additional related events.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North University Events - Featured Event</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>North University Events</h1>
+        <p>Discover life on campus and get involved!</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#events">Upcoming Events</a></li>
+                <li><a href="index.html#about">About Section</a></li>
+                <li><a href="event.html">Featured Event</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="event-intro">
+            <figure>
+                <img id="event-hero-image" src="images/festival.jpg"
+                    alt="A group of people sitting on a grassy quad with a stage and tents in the background">
+                <figcaption>Students on the quad at last year's festival!</figcaption>
+            </figure>
+            <h2>Student Festival</h2>
+            <p>Social</p>
+            <p><time datetime="2026-09-15T16:00">September 15, 2026 | 4:00 PM</time></p>
+            <p>Campus Quad</p>
+            <p>Join other North University students for our biggest social
+                event of the fall semester. The Student Festival will have live music from student bands, many
+                local food trucks, games, and booths from student organizations. It will be held on the campus quad.
+                Bring your friends and have a great time!</p>
+        </section>
+
+        <div id="event-layout">
+            <article id="event-main">
+                <h3>About the Event</h3>
+                <p>The Student Festival is North University's largest student run event, organized each fall
+                    by the Office of Student Engagement. It's designed to be a low pressure, enjoyable, and relaxing
+                    night
+                    where new and returning students can meet people, discover new clubs, and enjoy a break before
+                    midterms.
+                </p>
+
+                <h3>Attendee Expectations</h3>
+                <p>The event begins at 4:00 PM on the quad and the festival runs until 9:00 PM. Expect a lively,
+                    outdoor, family-friendly atmosphere with live music, food, and games at several stations.
+                    The event is free and open to all North University students, staff, and
+                    their guests.</p>
+                <ul>
+                    <li>Live performances from student bands!</li>
+                    <li>Food trucks featuring a variety of cuisines, free for students with valid ID!</li>
+                    <li>Carnival games with prizes</li>
+                    <li>Over 20 student organization booths to explore</li>
+                </ul>
+
+                <h3>Schedule</h3>
+                <ul>
+                    <li><time datetime="2026-09-15T16:00">4:00 PM</time> — Event begins, food trucks and booths open
+                    </li>
+                    <li><time datetime="2026-09-15T17:00">5:00 PM</time> — Student band performance</li>
+                    <li><time datetime="2026-09-15T18:30">6:30 PM</time> — Carnival games open</li>
+                    <li><time datetime="2026-09-15T19:30">7:30 PM</time> — Fireworks performance</li>
+                    <li><time datetime="2026-09-15T21:00">9:00 PM</time> — Event concludes</li>
+                </ul>
+
+                <h3>Accessibility</h3>
+                <p>The quad is fully accessible with paved pathways. Reserved seating is available near the
+                    main stage for any students or guests who need it. American Sign Language interpretation will be
+                    provided
+                    for the main stage performances. Service animals are welcome. Students or guests who need any
+                    additional
+                    accommodations can contact the Office of Student Engagement in advance at the email address
+                    listed in the footer.</p>
+            </article>
+
+            <aside id="event-sidebar">
+                <h3>Event Details</h3>
+                <ul id="sidebar-list">
+                    <li><strong>Date:</strong> <time datetime="2026-09-15">September 15, 2026</time></li>
+                    <li><strong>Time:</strong> 4:00 PM – 9:00 PM</li>
+                    <li><strong>Location:</strong> Campus Quad</li>
+                    <li><strong>Organizer:</strong> Office of Student Engagement</li>
+                    <li><strong>Admission:</strong> Free for all North University students and guests</li>
+                </ul>
+                <a href="index.html" class="button">Register to Attend</a>
+            </aside>
+        </div>
+
+        <section id="related-events">
+            <h3>Related Events</h3>
+            <div id="related-events-list">
+                <article class="card card-compact">
+                    <figure>
+                        <img src="images/pizza.jpg" alt="People sharing a pizza at a study session">
+                    </figure>
+                    <h4>Midterm Study and Pizza</h4>
+                    <p><time datetime="2026-09-20T18:00">Sept 20, 2026 | 6:00 PM</time></p>
+                    <p>Student Library Room 200</p>
+                    <a href="index.html" class="card-link">View Midterm Study and Pizza Details</a>
+                </article>
+
+                <article class="card card-compact">
+                    <figure>
+                        <img src="images/job-fair.jpg" alt="People filling out job applications at a table">
+                    </figure>
+                    <h4>Job Fair</h4>
+                    <p><time datetime="2026-10-25T14:00">Oct 25, 2026 | 2:00 PM</time></p>
+                    <p>Jackson Room 120</p>
+                    <a href="index.html" class="card-link">View Job Fair Details</a>
+                </article>
+
+                <article class="card card-compact">
+                    <figure>
+                        <img src="images/basketball.jpg" alt="Basketball under a basketball hoop">
+                    </figure>
+                    <h4>Basketball Tournament</h4>
+                    <p><time datetime="2026-10-30T17:00">Oct 30, 2026 | 5:00 PM</time></p>
+                    <p>Center Gym</p>
+                    <a href="index.html" class="card-link">View Basketball Tournament Details</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 North University. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:studentengagement@northuniversity.edu">studentengagement@northuniversity.edu</a>
+        </p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="event.html">Featured Event</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

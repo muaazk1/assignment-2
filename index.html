@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--
+  Name: Mu'aaz Khan
+  Date: 09.16.2026
+  CSC 372-01
+
+  This is the index.html page for assignment-2. It is the homepage for the North University Events website. 
+  It contains a header with a title and navigation menu, a hero section with an image and button, 
+  a section for upcoming events with event cards, and an about section describing the Office of Student Engagement. 
+  The page also includes a footer with contact information and additional navigation links.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North University Events Home Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>North University Events</h1>
+        <p>Discover life on campus and get involved!</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#events">Upcoming Events</a></li>
+                <li><a href="#about">About Section</a></li>
+                <li><a href="event.html">Featured Event</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Your Guide to Campus Activities at North University</h2>
+            <p>Explore upcoming social gatherings, athletic events, campus celebrations, and educational programs hosted
+                by our student organizations!</p>
+            <a href="#events" class="button">Explore Events</a>
+            <figure>
+                <img id="hero-image" src="images/hero.jpg"
+                    alt="Group of North University students sitting together on campus with laptops and laughing">
+                <figcaption>Students studying and socializing at the campus library!</figcaption>
+            </figure>
+        </section>
+
+        <section id="events">
+            <h2>Upcoming Events</h2>
+
+            <div id="upcoming-events-grid">
+                <article class="card card-wide">
+                    <figure>
+                        <img src="images/festival.jpg"
+                            alt="A group of people sitting on a grassy quad with a stage and tents in the background">
+                    </figure>
+                    <h3>Student Festival</h3>
+                    <p>Social</p>
+                    <p><time datetime="2026-09-15T16:00">September 15, 2026 | 4:00 PM</time></p>
+                    <p>Campus Quad</p>
+                    <p>Join us for live music performances by students, food trucks, games, and more
+                        on the quad.</p>
+                    <a href="event.html" class="card-link">View Student Festival Details</a>
+                </article>
+
+                <article class="card">
+                    <figure>
+                        <img src="images/pizza.jpg" alt="People sharing a pizza at a study session">
+                    </figure>
+                    <h3>Midterm Study and Pizza</h3>
+                    <p>Academics</p>
+                    <p><time datetime="2026-09-20T18:00">September 20, 2026 | 6:00 PM</time></p>
+                    <p>Student Library Room 200</p>
+                    <p>Come enjoy free pizza and get prepared for midterms with peer tutors!</p>
+                    <a href="event.html" class="card-link">View Midterm Study and Pizza Details</a>
+                </article>
+
+                <article class="card">
+                    <figure>
+                        <img src="images/job-fair.jpg" alt="People filling out job applications at a table">
+                    </figure>
+                    <h3>Job Fair</h3>
+                    <p>Career</p>
+                    <p><time datetime="2026-10-25T14:00">Oct 25, 2026 | 2:00 PM</time></p>
+                    <p>Jackson Room 120</p>
+                    <p>Bring your resume and connect with local companies who are hiring!</p>
+                    <a href="event.html" class="card-link">View Job Fair Details</a>
+                </article>
+
+                <article class="card card-wide">
+                    <figure>
+                        <img src="images/basketball.jpg" alt="Basketball under a basketball hoop">
+                    </figure>
+                    <h3>Basketball Tournament</h3>
+                    <p>Sports</p>
+                    <p><time datetime="2026-10-30T17:00">Oct 30, 2026 | 5:00 PM</time></p>
+                    <p>Center Gym</p>
+                    <p>Watch our basketball team face their rivals and compete for the championship!
+                    </p>
+                    <a href="event.html" class="card-link">View Basketball Tournament Details</a>
+                </article>
+
+                <article class="card card-wide">
+                    <figure>
+                        <img src="images/mic.jpg" alt="A dark theater stage illuminating a microphone">
+                    </figure>
+                    <h3>Open Mic and Talent Show Night</h3>
+                    <p>Arts</p>
+                    <p><time datetime="2026-11-01T19:00">November 1, 2026 | 7:00 PM</time></p>
+                    <p>Student Auditorium</p>
+                    <p>Show off your musical, comedy, or acting skills in front of a live audience!
+                    </p>
+                    <a href="event.html" class="card-link">View Open Mic and Talent Show Night Details</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Student Engagement</h2>
+            <p>The Office of Student Engagement at North University strives to provide students with organizations,
+                leadership opportunities, and cultural relations that create a vibrant campus community. We aspire to
+                foster an inclusive and welcoming environment where students feel welcome, become successful, and create
+                lifelong friendships.</p>
+
+            <h3>Our Services</h3>
+            <ul>
+                <li>Managing registration, funding and planning for campus activities and student clubs.</li>
+                <li>Providing resources such as campus food pantries, clothing closets, and more.</li>
+                <li>Hosting leadership development workshops and providing students with career support.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 North University. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:studentengagement@northuniversity.edu">studentengagement@northuniversity.edu</a>
+        </p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="event.html">Featured Event</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
