@@ -3,8 +3,12 @@
   Date: 09.16.2026
   CSC 372-01
 
-  This is the styles.css file for Assignment 2. It contains all required styles for the website.
+  This is the styles.css file for assignment 2. It contains all required styles for the website.
 */
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -52,6 +56,13 @@ header nav ul {
     padding: 10px 0px 0px 0px;
 }
 
+header nav a:hover,
+header nav a:focus,
+footer nav a:hover,
+footer nav a:focus {
+    text-decoration: underline;
+}
+
 footer nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -76,6 +87,11 @@ footer p {
     padding: 0.75rem 1.5rem;
     margin: 1rem;
     text-align: center;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #002244;
 }
 
 .card {
@@ -108,16 +124,6 @@ footer p {
     font-weight: bold;
 }
 
-#sidebar-list {
-    list-style: none;
-    margin: 0 0 1rem 0;
-    padding: 0;
-}
-
-#sidebar-list li {
-    margin-bottom: 0.5rem;
-}
-
 .card-compact {
     flex: 1 1 250px;
     max-width: 300px;
@@ -130,21 +136,9 @@ footer p {
     border-radius: 4px;
 }
 
-.button:hover,
-.button:focus {
-    background-color: #002244;
-}
-
 .card-link:hover,
 .card-link:focus {
     color: #099317;
-    text-decoration: underline;
-}
-
-header nav a:hover,
-header nav a:focus,
-footer nav a:hover,
-footer nav a:focus {
     text-decoration: underline;
 }
 
@@ -155,6 +149,16 @@ footer nav a:focus {
     justify-content: center;
     text-align: center;
     margin: 10px;
+}
+
+#sidebar-list {
+    list-style: none;
+    margin: 0 0 1rem 0;
+    padding: 0;
+}
+
+#sidebar-list li {
+    margin-bottom: 0.5rem;
 }
 
 #upcoming-events-grid {
@@ -182,7 +186,6 @@ footer nav a:focus {
 #event-hero-image {
     width: 100%;
     height: 350px;
-    max-height: 400px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -215,6 +218,7 @@ footer nav a:focus {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
+    justify-content: center;
 }
 
 @media (max-width: 768px) {
