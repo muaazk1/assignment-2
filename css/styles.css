@@ -242,9 +242,6 @@ footer p {
 }
 
 @media (max-width: 480px) {
-    header {
-        padding: 8px 12px 16px 12px;
-    }
 
     .button {
         display: block;
@@ -255,10 +252,6 @@ footer p {
 
     .card img {
         height: 160px;
-    }
-
-    #hero {
-        margin: 5px;
     }
 
 }
